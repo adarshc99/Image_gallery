@@ -1,0 +1,107 @@
+body
+{
+    background-color: rgb(26, 26, 23);
+}
+
+.select_file_div
+{
+    width:80%;
+    border: 2px solid black;
+    background-color: antiquewhite;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    position: sticky;
+    top:0%;
+
+}
+#select_file
+{
+    margin-bottom: 1%;
+}
+.Show_image
+{
+    width: 20%;
+    background: black;
+    color: aqua;
+    margin-left: 35%;
+    margin-right: 35%;
+    font-size: 1em;
+}
+.gallery
+{
+    display: grid;
+    margin: 10%;
+    margin-top: 5%;
+    width: 80%;
+    grid-template-columns: repeat(3,25%);
+    justify-content: space-between;
+    justify-items: center;
+}
+
+
+.delete_button
+{
+    border: 1px solid black;
+    width: 80%;
+    text-align: center;
+    background-color: black;
+    color: antiquewhite;
+}
+img{
+   
+    height: 100px;
+    width: inherit;
+}
+.image_id
+{
+    width: inherit;
+    margin: inherit;
+    justify-content: center;
+  
+}
+.delete_button,.Show_image:hover
+{
+    cursor: pointer;
+}
+
+@media screen and (max-width:300px) 
+{
+    .delete_button
+    {
+        font-size: small;
+    }
+    
+}
+
+.show_in_full_image
+{
+    display: none;
+    width: 80%;
+    grid-template-rows: repeat(10,10%);
+    grid-template-columns: repeat(10,10%);
+    margin: 2%;
+
+}
+.Cross
+{
+    grid-column: 9/10;
+    grid-row: 1/span 2;
+    border: 2px solid black;
+    background: red;
+    color: black;
+    align-self: center;
+    text-align: center;
+    font-size:1em ;
+}
+.full_width_height
+{
+    grid-row: 3/-1;
+    grid-column: 3/-1;
+    width: 80%;
+    height: 80%;
+}
+.Cross:hover
+{
+    cursor: pointer;
+}
